@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- css -->
+     <link rel="stylesheet" href="services.css">
+     <link rel="stylesheet" href="style.css">
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet">
+ 
+     <title>Server Management | Picacod</title>
+</head>
+
+<body>
+    <nav  class="navbar navbar-expand-lg position-fixed w-100" style="z-index: 1000;">
+        <div class="container">
+            <a class="navbar-brand text-light fw-bold d-flex align-items-center justify-content-center" href="/index.html">
+                <img src="/images/pac logo.png" alt="Logo" class="align-text-top">
+                <!-- <h4 class="mb-0 ms-1 text-dark fw-bold">PICACOD</h4> -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                 <img src="https://cdn-icons-png.flaticon.com/128/12596/12596853.png" width="30" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Company 
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/about.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="/services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="/careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop" href="/index.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" >
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="#"> Web & CMS Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="/services/php.html">Php</a></li>
+                                    <li><a class="dropdown-item" href="/services/wordpress.html">Wordpress</a></li>
+                                    <li><a class="dropdown-item" href="/services/laravel.html">Laraval</a></li>
+                                    <li><a class="dropdown-item" href="/services/react.html">React js</a></li>
+                                    <li><a class="dropdown-item" href="/services/angular.html">Angular</a></li>
+                                    <li><a class="dropdown-item" href="/services/nodejs.html">Node js</a></li>
+                                    <li><a class="dropdown-item" href="/services/cakephp.html">Cake php</a></li>
+                                    <li><a class="dropdown-item" href="/services/codeigniter.html">CodeIgniter</a></li>
+                                    <li><a class="dropdown-item" href="/services/python.html">Python</a></li>
+                                    <li><a class="dropdown-item" href="/services/django.html">Django</a></li>
+
+                                </ul>
+                            </li>
+                            <li> <a class="dropdown-item" href="#"> Mobile App Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="/services/android.html">Android App</a></li>
+                                    <li><a class="dropdown-item" href="/services/ios.html">IOS App</a></li>
+                                    <li><a class="dropdown-item" href="/services/hybrid.html">Hybrid App</a></li>
+                                    <li><a class="dropdown-item" href="/services/flutter.html">Flutter</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> Ecommerce Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="/services/woocommerce.html">Woocommerce</a></li>
+                                    <li><a class="dropdown-item" href="/services/shopify.html">Shopify</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> AI & ML <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="/services/chatgpt-solution.html">Chatgpt Solution</a></li>
+                                    <li><a class="dropdown-item" href="/services/contact-center-solutions.html">Contact Center Solution</a></li>
+                                    <li><a class="dropdown-item" href="/services/text-to-speech.html">Text to speech</a></li>
+                                    <li><a class="dropdown-item" href="/services/bussiness-intelligence.html">Business Intelligence</a></li>
+                                    <li><a class="dropdown-item" href="/services/sentimental-intelligence.html">Sentimental Intelligence</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#"> IT & Networking <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="/services/database-management-administrtion.html">Database Management & Administration</a></li>
+                                    <li><a class="dropdown-item" href="/services/devops-infrastructure.html">Devops & Infrastructure</a></li>
+                                    <li><a class="dropdown-item" href="/services/information-security-compliance.html">Information Security & Compliance</a></li>
+                                    <li><a class="dropdown-item" href="/services/network-system-administration.html">Network & System Administration</a></li>
+                                    <li><a class="dropdown-item" href="/services/server-management.html">Server Management</a></li>
+                                    <li><a class="dropdown-item" href="/services/qa-testing.html">QA Testing</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" >
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/portfolio.html">Clients</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link first-drop" href="/contact.html" >Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link first-drop" href="/careers.html" >Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!------------- services ------------>
+
+    <section>
+        <div class="services">
+            <div class="container">
+                <h4 class="services-title"><strong>Server Management</strong></h4>
+                <p>IT & Networking</p>
+                <hr class="w-50  border-dark-subtle">
+
+                <p><strong>IT & Networking: Server Management by Picacod</strong></p>
+                <p>
+                    In the complex ecosystem of IT & Networking, Server Management plays a crucial role in ensuring the smooth operation of a business’s digital infrastructure. Picacod offers specialized Server Management services, tailored to maintain, optimize, and secure your server environment, ensuring uninterrupted business operations.
+                </p>
+                <p><strong>The Importance of Server Management</strong></p>
+                <p>Effective Server Management is essential for multiple reasons:</p>
+
+                <ol type="1">
+                    <li><strong>Operational Reliability:</strong> Servers are the lifelines of modern IT infrastructure. Their efficient management is crucial for the reliability and availability of business applications and services.</li>
+                    <li><strong>Security and Compliance:</strong> With the increasing frequency of cyber threats, safeguarding servers against potential breaches is essential. Additionally, maintaining compliance with data protection regulations is crucial.</li>
+                    <li><strong>Performance Optimization:</strong> Regular monitoring and maintenance ensure that servers operate at peak efficiency, thereby enhancing overall performance.</li>
+                    <li><strong>Scalability and Flexibility:</strong> As business needs evolve, server infrastructure must adapt accordingly. Effective server management enables this scalability and flexibility.</li>
+                    <li><strong>Cost-Effectiveness:</strong> Proactive server management helps in identifying and resolving issues before they escalate, reducing the risk of costly downtime.</li>
+                </ol>
+
+                <P><strong>Picacod’s Expertise in Server Management</strong></P>
+                <p>At Picacod, we understand the critical nature of server management in the IT landscape. Our comprehensive services are designed to provide seamless server operation:</p>
+
+                <ol type="1">
+                    <li><strong>Customized Server Solutions:</strong> We tailor server solutions to fit the unique requirements of your business, ensuring optimal alignment with your IT strategy.</li>
+                    <li><strong>Continuous Monitoring and Maintenance:</strong> Our team provides round-the-clock monitoring and regular maintenance of your servers, preempting potential issues and ensuring operational continuity.</li>
+                    <li><strong>Advanced Security Measures:</strong> We implement robust security protocols, including firewalls, intrusion detection, and regular security audits, to protect your servers from internal and external threats.</li>
+                    <li><strong>Data Backup and Disaster Recovery:</strong> Our server management includes comprehensive backup solutions and disaster recovery plans to safeguard your critical data and ensure quick recovery in the event of data loss.</li>
+                    <li><strong>Performance Tuning:</strong> We continuously assess server performance, implementing tuning measures to optimize speed, capacity, and reliability.</li>
+                    <li><strong>Cloud and On-Premise Management:</strong> Whether your servers are on-premise, in the cloud, or a hybrid setup, we offer expert management solutions tailored to your environment.</li>
+                    <li><strong>Compliance Assurance:</strong> Our server management services ensure that your server infrastructure complies with relevant industry standards and regulations.</li>
+                    <li><strong>Scalable Infrastructure Management:</strong> We provide scalable server management solutions that grow with your business, ensuring that your server infrastructure can handle increased demands.</li>
+                    <li><strong>Expert Support and Consultation:</strong> Our team of experts is available for ongoing support and strategic consultation, helping you navigate the complexities of server management.</li>
+                </ol>
+
+                <p>
+                    In an era where dependable digital infrastructure is key to business success, Picacod’s Server Management services offer the assurance of stability, security, and efficiency. Let us manage the complexities of your server environment, allowing you to focus on driving your business forward with confidence.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!------------ services end --------->
+    
+        <!-- footer -->
+
+        <footer class="footer">
+            <div class="text-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+                <div class="container overflow-hidden">
+                    <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+                        <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
+                            <div class="footer-logo-wrapper text-center text-sm-start">
+                                <a href="about.html" class="link-light text-decoration-none">
+                                    <img src="/images/logo.png" alt="Logo" width="60" height="50">
+                                    Picacod Consultancy
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary px-2 px-md-3" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary px-2 px-md-3" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary px-2 px-md-3" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary px-2 px-md-3" href="#!">Terms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link link-secondary px-2 px-md-3" href="#!">Privacy</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
+                            <div class="social-media-wrapper">
+                                <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end"
+                                    style="color: aliceblue;">
+                                    <li class="me-3">
+                                        <a href="https://www.linkedin.com/company/picacod-consultancy-services-pvt-ltd">
+                                            <i class="fa-brands fa-linkedin-in fs-5 text-light"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3">
+                                        <a href="#!">
+                                            <i class="fa-brands fa-x-twitter fs-5 text-light"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3">
+                                        <a href="https://www.instagram.com/picacod">
+                                            <i class="fa-brands fa-instagram fs-5 text-light"></i>
+                                        </a>
+                                    </li>
+                                    <li class="me-3">
+                                        <a href="mailto:info@picacod.com">
+                                            <i class="fa-regular fa-envelope fs-5 text-light"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright - Component -->
+            <div class="text-light py-3 py-md-5 border-top  border-secondary-subtle">
+                <div class="container overflow-hidden">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer-copyright-wrapper text-center">
+                                &copy; 2024. All Rights Reserved.
+                            </div>
+                            <div class="credits text-secondary text-center mt-2 fs-8">
+                                <p>Picacod Consultancy Services PVT.LTD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+    
+        <!-- footer end-->
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- js -->
+    <link rel="stylesheet" href="main.js">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<!-- Bootstrap Bundle with Popper.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Contact Us | Picacod</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed w-100" style="z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold d-flex align-items-center justify-content-center"
+                href="index.html">
+                <img src="/images/pac logo.png" alt="Logo" class="align-text-top">
+                <!-- <h4 class="mb-0 ms-1 text-dark fw-bold">PICACOD</h4> -->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <img src="https://cdn-icons-png.flaticon.com/128/12596/12596853.png" width="30" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll" style="--bs-scroll-height: 300px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Who we are</a></li>
+                            <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item"> Web & CMS Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="services/php.html">Php</a></li>
+                                    <li><a class="dropdown-item" href="services/wordpress.html">Wordpress</a></li>
+                                    <li><a class="dropdown-item" href="services/laravel.html">Laraval</a></li>
+                                    <li><a class="dropdown-item" href="services/react.html">React js</a></li>
+                                    <li><a class="dropdown-item" href="services/angular.html">Angular</a></li>
+                                    <li><a class="dropdown-item" href="services/nodejs.html">Node js</a></li>
+                                    <li><a class="dropdown-item" href="services/cakephp.html">Cake php</a></li>
+                                    <li><a class="dropdown-item" href="services/codeigniter.html">CodeIgniter</a></li>
+                                    <li><a class="dropdown-item" href="services/python.html">Python</a></li>
+                                    <li><a class="dropdown-item" href="services/django.html">Django</a></li>
+
+                                </ul>
+                            </li>
+                            <li> <a class="dropdown-item"> Mobile App Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="services/android.html">Android App</a></li>
+                                    <li><a class="dropdown-item" href="services/ios.html">IOS App</a></li>
+                                    <li><a class="dropdown-item" href="services/hybrid.html">Hybrid App</a></li>
+                                    <li><a class="dropdown-item" href="services/flutter.html">Flutter</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item"> Ecommerce Development <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="services/woocommerce.html">Woocommerce</a></li>
+                                    <li><a class="dropdown-item" href="services/shopify.html">Shopify</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item"> AI & ML <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="services/chatgpt-solution.html">Chatgpt
+                                            Solution</a></li>
+                                    <li><a class="dropdown-item" href="services/contact-center-solutions.html">Contact
+                                            Center Solution</a></li>
+                                    <li><a class="dropdown-item" href="services/text-to-speech.html">Text to speech</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="services/bussiness-intelligence.html">Business
+                                            Intelligence</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="services/sentimental-intelligence.html">Sentimental Intelligence</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item"> IT & Networking <span>▸</span></a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="services/database-management-administrtion.html">Database Management
+                                            & Administration</a></li>
+                                    <li><a class="dropdown-item" href="services/devops-infrastructure.html">Devops &
+                                            Infrastructure</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="services/information-security-compliance.html">Information Security &
+                                            Compliance</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="services/network-system-administration.html">Network & System
+                                            Administration</a></li>
+                                    <li><a class="dropdown-item" href="services/server-management.html">Server
+                                            Management</a></li>
+                                    <li><a class="dropdown-item" href="services/qa-testing.html">QA Testing</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle first-drop" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html">Clients</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link first-drop" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link first-drop" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item me-5 rounded-3" style="background-color: rgb(31, 30, 30)">
+                        <a class="nav-link first-drop px-3 " href="contact.html">
+                           Get a Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!------------- contact ------------>
+    <section class="py-3 py-md-5" >
+        <div class="container contact">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                    <h3 class="mb-4 text-dark text-center fw-bold">CONTACT US</h3>
+                    <p class="text-secondary mb-5 text-center">The best way to contact us is to use our contact form
+                        below. Please fill out all of the required fields and we will get back to you as soon as
+                        possible.</p>
+                    <hr class="w-50 mx-auto mb-xl-9 border-dark-subtle">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-8">
+                    <div class="bg-white rounded shadow-sm overflow-hidden">
+
+                        <!-- form -->
+                        <form id="contactForm">
+                            <div class="row gy-4 gy-xl-5 p-4 p-xl-5" >
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" id="email" name="email" required >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="phone" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="phone" name="phone" required >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" name="message" rows="3" required ></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn home-bottum-button  btn-lg" >Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+                        <script>
+                            (function () {
+                                emailjs.init({
+                                    publicKey: "_teA6qSyaJG4VYLcx",
+                                });
+                            })();
+                        
+                            $("#contactForm").submit(function (e) {
+                                e.preventDefault(); // Prevent default form submission
+                        
+                                // Collect form data
+                                var params = {
+                                    name: $("#name").val(),
+                                    email: $("#email").val(),
+                                    phone: $("#phone").val(),
+                                    message: $("#message").val()
+                                };
+                        
+                                // Check if required fields are filled
+                                if (!params.name || !params.email || !params.message) {
+                                    Swal.fire({
+                                        icon: 'error',
+                                        title: 'Missing Required Fields',
+                                        text: 'Please fill out all required fields.',
+                                        confirmButtonColor: '#3085d6',
+                                        confirmButtonText: 'OK'
+                                    });
+                                    return;
+                                }
+                        
+                                const serviceID = "service_grmy5ge";
+                                const templateID = "template_vw3k4jh";
+                        
+                                emailjs.send(serviceID, templateID, params)
+                                    .then((res) => {
+                                        // Clear form fields
+                                        $("#contactForm")[0].reset();
+                                        
+                                        // Show success alert
+                                        Swal.fire({
+                                            icon: 'success',
+                                            title: 'Form submitted successfully',
+                                            showConfirmButton: false,
+                                            timer: 2500 // Auto close alert after 2.5 seconds
+                                        });
+                                    })
+                                    .catch((err) => {
+                                        // Show error alert
+                                        Swal.fire({
+                                            icon: 'error',
+                                            title: 'Something went wrong',
+                                            text: 'Please try again later.',
+                                            confirmButtonColor: '#3085d6',
+                                            confirmButtonText: 'OK'
+                                        });
+                                    });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="contact-address col-lg-4">
+                    <div class=" rounded shadow-sm overflow-hidden pb-5"
+">
+
+                        <p class="fw-bold ms-3 fs-6 mt-5">Our Office in Kakkanad - Kerala - India</p>
+
+
+                        <ul>
+                            <li><strong>Address :</strong> Heavenly Plaza, 11th Floor, Office NO: H11, Civil Line Road,
+                                Padamugal, Kakkanad - 682021</li>
+                            <li><strong>Contact :</strong>+91 8921555905</li>
+                            <li><strong>Email :</strong>info@picacod.com</li>
+                        </ul>
+
+                        <p class="fw-bold ms-3 fs-6 mt-4">Our Office in Kadavanthara - Kerala - India</p>
+
+
+                        <ul>
+                            <li><strong>Address :</strong> H.O: VS 2 Beyond 90A, Canal Road, Girinagar, Kadavanthara,
+                                Ernakulam - 682020</li>
+                            <li><strong>Contact :</strong>+91 9074735094</li>
+                            <li><strong>Email :</strong>info@picacod.com</li>
+                        </ul>
+
+                        <p class="fw-bold ms-3 fs-6 mt-5">Business Hours</p>
+
+                        <ul>
+                            <li>Monday - Saturday - <span class="text-success">8:45 am</span> to <span
+                                    class="text-success">6 pm</span></li>
+                            <li>Sunday - <span class="text-danger">closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- conatact end -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="text-light py-3 py-md-5 py-xl-8 border-top border-dark">
+            <div class="container overflow-hidden">
+                <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+                    <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
+                        <div class="footer-logo-wrapper text-center text-sm-start">
+                            <a href="about.html" class="link-light">
+                                <img src="/images/logo.png" alt="Logo" width="60" height="50">
+                                Picacod Consultancy
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary px-2 px-md-3" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary px-2 px-md-3" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary px-2 px-md-3" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Terms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary px-2 px-md-3" href="#!">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
+                        <div class="social-media-wrapper">
+                            <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end"
+                                style="color: aliceblue;">
+                                <li class="me-3">
+                                    <a href="https://www.linkedin.com/company/picacod-consultancy-services-pvt-ltd">
+                                        <i class="fa-brands fa-linkedin-in fs-5 text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="#!">
+                                        <i class="fa-brands fa-x-twitter fs-5 text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="https://www.instagram.com/pic_a_cod">
+                                        <i class="fa-brands fa-instagram fs-5 text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="mailto:info@picacod.com">
+                                        <i class="fa-regular fa-envelope fs-5 text-light"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright - Component -->
+        <div class="text-light py-3 py-md-5 border-top  border-secondary">
+            <div class="container overflow-hidden">
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-copyright-wrapper text-center">
+                            &copy; 2024. All Rights Reserved.
+                        </div>
+                        <div class="credits text-secondary text-center mt-2 fs-8">
+                            <p>Picacod Consultancy Services PVT.LTD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- footer end-->
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

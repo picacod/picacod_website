@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+
+}
+
+html,
+body {
+  overflow-x: hidden
+}
+
+/* ====== Navbar ====== */
+
+.navbar .first-drop {
+  color: #ffffff !important;
+}
+
+.navbar a:hover{
+  color: #14a1ff !important;
+}
+
+.navbar{
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: #000000;
+}
+
+/* ============ dropdown desktop view ============ */
+@media all and (min-width: 992px) {
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.dropdown-menu li {
+    position: relative;
+    /* padding: 0.5rem 0.5rem; */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+    border-radius: 4px; /* Match border radius with menu */
+}
+
+.nav-item .submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0; /* Align with the main menu */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent for submenu */
+    border-radius: 4px; /* Match the submenu with the main menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match shadow with the main menu */
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensure submenu appears above other content */
+}
+
+.nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu > li:hover {
+    background-color: rgba(240, 240, 240, 0.8); /* Slightly transparent hover effect */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Light shadow effect inside */
+}
+
+.dropdown-menu > li:hover > .submenu {
+    display: block;
+}
+}
+
+/* ============ dropdown small devices ============ */
+@media (max-width: 991px) {
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly less transparent */
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu > li {
+    /* padding: 0.5rem 1rem; */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition on hover */
+    border-radius: 4px; /* Match border radius with menu */
+}
+
+.dropdown-menu > li:hover {
+    background-color: rgba(240, 240, 240, 0.8); /* Transparent hover effect */
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Light shadow effect inside */
+}
+
+.dropdown-menu > li:hover > .submenu {
+    display: block;
+}
+}
+
+
+/* ====== Navbar end ====== */
+
+/* ====== Back to top ====== */
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 1;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999999;
+  background: #0099ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #0099ff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ====== Back to top end ====== */
+
+/* ==== services ===== */
+.services {
+  background-color: #ffffff;
+  padding: 8rem 0;
+}
+
+.service-heading-tab {
+  color: #333;
+  background: #f1f5f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-heading-tab h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+.service-heading-tab p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 1000px;
+  text-align: center;
+
+}
+
+.service-main-tab {
+  margin-top: 2rem;
+}
+
+.service-main-tab img {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+/* Slide up effect on hover */
+.service-main-tab img:hover {
+  transform: translateY(-10px); /* Move the image up by 10 pixels */
+}
+
+
+.service-main-tab .col-lg-8 {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.service-main-tab .col-lg-8 p {
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* General styles for the service-content */
+.service-content {
+padding: 3rem 2rem; /* Ample padding for comfort */
+background-color: #ffffff; /* Clean white background */
+color: #333; /* Dark text for readability */
+margin: 3rem auto; /* Centering */
+text-align: left; /* Left-align text */
+}
+
+/* Individual service item styles */
+.service-item {
+margin-bottom: 2.5rem; /* Space between items */
+padding: 1.5rem; /* Inner padding for breathing space */
+border-left: 4px solid #007bff; /* Left border for emphasis */
+transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for service items */
+.service-item:hover {
+transform: translateY(-5px); /* Lift effect on hover */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Service item heading styles */
+.service-item h4 {
+color: #007bff; /* Vibrant blue */
+font-weight: 600; /* Medium weight for headings */
+font-size: 1.75rem; /* Heading size */
+margin-bottom: 0.5rem; /* Space below header */
+}
+
+/* Paragraph styles */
+.service-item p {
+font-size: 1.1rem; /* Regular font size */
+line-height: 1.6; /* Improved line height */
+margin: 0; /* Reset margin for paragraph */
+text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+.service-content {
+    padding: 2rem 1rem; /* Adjust padding for mobile */
+}
+
+.service-item h4 {
+    font-size: 1.5rem; /* Smaller heading font on mobile */
+}
+}
+
+
+
+/* ====== footer section ====== */
+footer{
+background-color: rgb(26, 26, 26);
+}
